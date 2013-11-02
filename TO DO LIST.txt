@@ -1,0 +1,3 @@
+list services, log on time, user logged in
+create agent to call back to centralized server
+organize information, logs, possible GUI
