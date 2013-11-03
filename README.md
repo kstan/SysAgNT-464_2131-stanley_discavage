@@ -7,7 +7,7 @@ License URL: http://www.gnu.org/licenses/gpl.html
 Requirements: Powershell
 
 Description
-===========
+============
 
 SysAgNT is a Windows Profiler designed as an agent that can be placed on a computer and can call back
 to a centralized server where the data collected can be organized. 
