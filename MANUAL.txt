@@ -1,0 +1,44 @@
+MANUAL
+======
+
+NAME
+
+	SysAgNT
+
+SYNOPSIS
+
+	...more will be added...
+
+
+DESCRIPTION
+	Windows Profiler that can access information on the Windows Environment and compile it into a readable format. 
+	(Full description is in the SysAgNT README.md file.) 
+
+Flags
+=====
+-   
+-
+-
+
+
+...more will be added...
+
+AUTHOR
+
+	Written by Kevin Stanley and Charles Discavage
+
+
+COPYRIGHT
+
+
+       Copyright (C) 2006 Free Software Foundation, Inc.
+       This is free software.  You may redistribute copies  of	it  under  the
+       terms	   of	    the	     GNU      General	   Public      License
+       <http://www.gnu.org/licenses/gpl.html>.	There is NO WARRANTY,  to  the
+       extent permitted by law.
+	
+
+
+
+
+
