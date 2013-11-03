@@ -2,7 +2,7 @@ SysAgNT
 =======
 
 Contributors: Kevin Stanley (kstan), Charles Discavage (csd2513)
-License: GNU 
+License: GNU GPLv3
 License URL: http://www.gnu.org/licenses/gpl.html
 Requirements: Powershell
 
