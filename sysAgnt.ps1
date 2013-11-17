@@ -2,14 +2,11 @@
 
 
 $Logfile = "sysAgnt.log"
-$nl = [System.Environment]::NewLine
 
-#$content = $content.Replace( $nl, "," )
 #Function to write to logfile.
 Function writeLog
 {
    Param ([string]$logstring)
-   #$logstring.Replace($nl, ",")
    Add-content $Logfile -value $logstring
 }
 
@@ -20,8 +17,8 @@ writeLog ("User name is: $usrName")
 $OSname = (Get-WmiObject Win32_OperatingSystem).Name
 $Architecture = (Get-WmiObject Win32_OperatingSystem).OSArchitecture
 
-writeLog ("OS Name is: $OSname")
-writeLog ("OS Architecture is: $Architecture")
+writeLog("OS Name is: $OSname")
+writeLog("OS Architecture is: $Architecture")
 
 
 
@@ -31,24 +28,32 @@ $date = Get-Date #Gets date.
 
 writeLog("Name of computer: $computerName")
 writeLog("Current Time: $date")
+
+#Prints above information formatted with comma as delimiter
+#writes user name, OS name, 32 or 64 bit, computer name, date and time to file 
+writeLog("List of info: $usrName,$OSname,$Architecture,$computerName,$date")
+
 writeLog("List of processes:")
+[string]$newtemp = ""
+[int]$num = 0
 Get-Process | Select-Object name | Foreach { 
 	
-	[string]$tempstring = "$_"
-	Write-Host "1" #Testing to see if writing to output
-	$newtemp = $tempstring -replace ([System.Environment]::NewLine, ",")
-	Write-Host "2"
-	#Write-Host $nl
-	#Write-Host $newtemp
-	writeLog("$newtemp")
-	Write-Host "3"
-	#Write-Host $tempstring
-	#Write-Host $nl
-	#writeLog($tempstring)
-
-	} #.Replace('\r\n', ","))} #loop through all the processes and write each one to log
-writeLog("List of applications")
-Get-WmiObject -Class win32_Product | Select-Object name | Foreach { writeLog("$_")} #loop through all the software and write each one to log
-writeLog(",")
+	[string]$procrun = "$_"       #adds each process appending to a string with comma as delimiter and new line at end of stirng
+	[string]$procrun1 = $procrun.trim("@{Name=")
+	[string]$process = $procrun1.trimend("}")
+	[string]$proclist = $proclist + $process + ","
+	}
+	
+	writeLog ("Let's see if this works: $proclist")
+	writeLog("List of applications")
+Get-WmiObject -Class win32_Product | Select-Object name | Foreach {   #adds each application appending it to a string with a comma as a delimiter and new line at end of string
+	[string]$apprun = "$_"
+	[string]$apprun2 = $apprun.trimstart("@{name=")
+	[string]$apprun3 = $apprun2.trimend("}")
+	[string]$applist = $applist + $apprun3 + ","
+	}
+	writeLog("Let's see if this works: $applist")
+	
+	
 writeLog("End of logfile.")
 
