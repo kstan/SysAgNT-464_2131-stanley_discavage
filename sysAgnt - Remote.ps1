@@ -55,5 +55,5 @@ Get-WmiObject -Class win32_Product | Select-Object name | Foreach {   #adds each
 	writeLog("Applications|$applist")
 	
 	
-
+writeLog("End of logfile.")
 
