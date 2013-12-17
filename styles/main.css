@@ -1,0 +1,148 @@
+/*Navigation Styling*/
+
+#titleDiv{
+   	width: 55%;  for IE 6 
+}
+
+#title{
+	font-size: 75px;
+	font-family: Helvetica, Sans-Serif; 
+	letter-spacing: -1px;  
+	padding: 10px; 
+	margin: 0 auto;
+}
+
+div#nav{
+	background: #373842;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	height: 2em; 
+	width: 55%;
+}
+
+ul.menu{
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+	font-size: 18px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 35px;
+	width: 55%;
+}
+
+ul.menu li {
+	display: block;
+	position: relative;
+	float: left;
+	border-bottom: 1px;
+}
+
+ul.menu li a {
+	display: block;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 5px 15px 5px 15px;
+	background: #373842;
+	margin-left: 1px;
+	white-space: nowrap;
+}
+
+ul.menu li a:hover{
+	color: #736F6E;
+}
+
+h2.title{
+	font-family: 'Trebuchet MS', Helvetica, sans-serif;
+
+}
+
+p{
+	width: 55%;
+}
+
+/*Styles for Computer Info Formatting*/
+
+.computerInfo{
+
+	background-color: #f0f0f0;
+	width: 35%;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+.computerTitle{
+	font-family: 'Trebuchet MS';
+	font-size: 15px;
+}
+
+.computerType{
+	font-family: 'Trebuchet MS';
+	font-size: 14px;
+}
+
+.processesTitle{
+	font-family: 'Trebuchet MS';
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.longList li{
+	text-decoration: none;
+}
+
+.longList{
+	font-family: 'Trebuchet MS';
+	font-size: 11px;
+
+}
+
+/*Styles of Computer List*/
+
+#computerList
+{
+	list-style-type: none;
+	font-family: 'Trebuchet MS';
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+}
+
+#computerList li a{
+	font-size: 18px;
+	color: black;
+	text-decoration: none;
+}
+
+#computerList li a:hover{
+	font-size: 18px;
+	color: black;
+	text-decoration: underline;
+}
+
+/*Styles of Computer List*/
+
+#logList
+{
+	list-style-type: none;
+	font-family: 'Trebuchet MS';
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+
+#logList li a{
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+}
+
+#logList li a:hover{
+	font-size: 14px;
+	color: black;
+	text-decoration: underline;
+}
+
+p{
+	font-family: 'Trebuchet MS';
+	font-size: 13px;
+}
