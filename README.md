@@ -65,4 +65,11 @@ If not run as administrator, there will be an error.
 
 To setup SysAgNT to run every hour:
 Search "Scheduled Tasks" and open.
+Create Task.
+Check "Run with highest Privileges"
+Click Triggers... Start 12:00:00AM
+Advanced settings: Repeat task every: 1 hour for a duration of 1 day
+Actions, find where the script is and click.
+Then okay.
+
 
